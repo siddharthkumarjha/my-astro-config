@@ -17,3 +17,7 @@ end
 
 require "lazy_setup"
 require "polish"
+
+vim.opt.tabstop = 4       -- Number of spaces a <Tab> represents
+vim.opt.shiftwidth = 4    -- Number of spaces to use for indentation
+vim.opt.expandtab = true  -- Convert tabs to spaces
