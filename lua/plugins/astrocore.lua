@@ -73,12 +73,10 @@ return {
           desc = "Markdown preview",
         },
 
-        -- tables with just a `desc` key will be registered with which-key if it's installed
-        -- this is useful for naming menus
-        -- ["<Leader>b"] = { desc = "Buffers" },
-
-        -- setting a mapping to false will disable it
-        -- ["<C-S>"] = false,
+        ["<Leader>fy"] = {
+          function() require("telescope").extensions.neoclip.default() end,
+          desc = "search history",
+        },
       },
     },
   },
