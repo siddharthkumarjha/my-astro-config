@@ -21,3 +21,11 @@ require "polish"
 vim.opt.tabstop = 4       -- Number of spaces a <Tab> represents
 vim.opt.shiftwidth = 4    -- Number of spaces to use for indentation
 vim.opt.expandtab = true  -- Convert tabs to spaces
+
+-- Move line up/down in normal mode
+vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { silent = true })
+vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { silent = true })
+
+-- Move selection up/down in visual mode
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR><Esc>gv", { silent = true })
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR><Esc>gv", { silent = true })
