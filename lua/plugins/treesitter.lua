@@ -1,4 +1,3 @@
-
 -- Customize Treesitter
 
 ---@type LazySpec
@@ -9,6 +8,10 @@ return {
       "lua",
       "vim",
       -- add more arguments for adding more treesitter parsers
+    },
+    indent = {
+      enable = false,
+      disable = { "c", "cpp" },
     },
   },
 }
