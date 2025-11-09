@@ -44,6 +44,7 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       clangd = {
+        cmd = { "/usr/bin/clangd" },
         capabilities = { offsetEncoding = "utf-8", backgroundIndex = true, clangTidy = true },
       },
     },
