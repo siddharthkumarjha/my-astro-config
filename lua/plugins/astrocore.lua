@@ -68,7 +68,7 @@ return {
           desc = "Close buffer from tabline",
         },
 
-        ["<Leader>mp"] = {
+        ["<Leader>Mp"] = {
           function() vim.cmd "MarkdownPreviewToggle" end,
           desc = "Markdown preview",
         },
